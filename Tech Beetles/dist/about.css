@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  margin-left: 30%;
+  background-color: #25ab20;
+}
+
+
+header{
+  /* margin-top: 0px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 100px;
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #25ab20;
+
+}
+
+nav button {
+  background: none;
+  border: none;
+  padding: 10px;
+  margin-right: 20%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+#logo {
+  font-size: 24px;
+font-weight: bold;
+margin-left: 3%;
+}
+
+.abt-top{
+  position: relative;
+  text-align: center;
+  padding-top: 20px;
+}
+.abt-head{
+  padding: 0px 0px 0px 50px;;
+}
+
+.abt-info{
+  padding: 0px 0px 0px 50px;
+}
+
+.abt-shadow{
+  border: 2px solid rgb(250, 239, 239);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 20px rgba(118, 121, 121, 0.3);
+}

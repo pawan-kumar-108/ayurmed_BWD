@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+}
+
+nav {
+  display: flex;
+  margin-left: 30%;
+  background-color: #25ab20;
+}
+
+
+header{
+  /* margin-top: 0px; */
+  padding-top: 10px;
+  box-shadow: 8px 8px 8px rgba(57, 54, 54, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 100px;
+  border-radius: 14px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #25ab20;
+
+}
+
+nav button {
+  background: none;
+  border: none;
+  padding: 10px;
+  margin-right: 20%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+  /* #navbar{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+  } */
+ #iconContainer{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+ }
+  
+  #logo {
+    font-size: 24px;
+  font-weight: bold;
+  margin-left: 3%;
+  }
+  #container1{
+    margin-top: 10px;
+    padding-top: 70px;
+  }
+  
+  main {
+    padding: 180px 20px 20px;
+    text-align: center;
+    margin-bottom: 200px;
+  }
+
+  #welcome {
+    font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    margin-bottom: auto;
+    width: 90%;
+    margin: auto;
+  }
+
+  #ayurmed {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+  }
+  #pflogo{
+    position: relative;
+    margin-left: 75%;
+    width: 8%;
+
+  }
+
+  /* .profile_img{
+    position: relative;
+    margin-left: 95%;
+    width: 2.5%;
+    height: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+  }
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgba(197, 191, 191, 0.669);
+    border: 2px solid #ebd9d980; /* Optional: Add a border for better visualization */
+    
+}
+
+/* Left section styles */
+.left-section {
+    flex: 1;
+    padding-right: 20px; /* Optional: Add some spacing between the sections */
+  
+    color: #000000;
+
+  }
+
+/* Right section styles */
+.right-section img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
+
+#rightimg{
+    width: 300px;
+    margin-right: 120px;
+}
+
+#left_section{
+    width: 300px;
+    margin-left: 120px;
+}
+
+.list1{
+  margin-bottom: 5px;
+}
+
+.inner-box{
+  border: 1px solid #000000;
+}
+
+.main_content{
+  position: relative;
+  display: flex;
+  border-radius: 2px;
+  border: 1px solid #000000;
+}

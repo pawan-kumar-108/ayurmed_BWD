@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AyurMed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      /* background: linear-gradient(45deg, #64b5f6, #4caf50); */
+      background: url(/login-sign-up-form-with-flip-effect/dist/backimg.png);
+      /* Green gradient background */
+      background-size: 100%;
+      background-repeat: no-repeat;
+      /* color: #fff; */
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px;
+      background: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: relative;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    #logo {
+      font-size: 24px;
+      color: green;
+      font-weight: bold;
+      margin-left: 3%;
+    }
+
+    nav {
+      display: flex;
+      margin-left: -2%;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 10px;
+      margin-right: 20%;
+      color: #000000;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* .hamburger-menu {
+      display: none;
+      font-size: 20px;
+      position: absolute;
+      margin-left: 10%;
+      cursor: pointer;
+    } */
+
+    main {
+      padding: 140px 20px 20px;
+      text-align: center;
+      margin-bottom: 200px;
+    }
+
+    #welcome {
+      font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+      margin-bottom: auto;
+      width: 68vw;
+      line-height: 1.5;
+      margin: auto;
+    }
+
+    .welcometo {
+      margin: auto;
+      font-size: 6vh;
+    }
+
+    #ayurmed {
+      font-size: 20vh;
+      font-weight: bold;
+      color: green;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    #pflogo {
+      position: relative;
+      margin-left: 75%;
+      width: 8%;
+
+    }
+
+    /* .profile_img{
+      position: relative;
+      margin-left: 95%;
+      width: 2.5%;
+      height: 2.5%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+
+    .box {
+      width: 200px;
+      height: 200px;
+      background: rgba(51, 229, 45, 0.1);
+      border-radius: 10px;
+      margin: 20px;
+      display: flexbox;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    /* #icon1{
+      width: 10px;
+    }
+
+    .AskAyur{
+      width: 30px;
+    } */
+
+    .box:hover {
+      transform: scale(1.1);
+    }
+
+    #iconContainer {
+      text-align: left;
+    }
+
+    #redirectIcon {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      padding: 25px;
+      margin-right: 40px;
+    }
+
+    .profile_img {
+      position: relative;
+      display: inline-block;
+    }
+
+    .option {
+      margin-left: 50px;
+      margin-top: 15px;
+      align-items: center;
+    }
+
+    .title {
+      margin: 20px 57.5px;
+      font-weight: bold;
+    }
+
+    #doctor_png {
+      margin-left: 30px;
+      margin-top: 28px;
+      font-weight: bold;
+    }
+
+    #img_card {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    #img_card1 {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    #img_card2 {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+    #img_card3 {
+      width: 100px;
+      border-radius: 8px;
+    }
+
+
+    .login-options {
+      position: absolute;
+      top: 71%;
+      left: 35%;
+      transform: translateX(-50%);
+      background-color: #928e8e;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      display: none;
+
+    }
+
+    .profile_img:hover .login-options {
+      display: block;
+    }
+
+    #main-con {
+      background: url(/login-sign-up-form-with-flip-effect/dist/backimg.png);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #141414;
+      color: #c1afaf;
+      text-align: left;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .footer_box {
+      padding: 5px 40px 50px 40px;
+    }
+
+    #footer_logo {
+      font-size: 40px;
+      font-weight: 600s;
+    }
+
+    #copyright {
+      padding: 0px 0px 0px 650px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">AyurMed</div>
+
+    <nav>
+      <button>Home</button>
+      <button id="aboutbutton">About</button>
+      <button>Contact</button>
+      <button><a href="#Services">Services</a></button>
+    </nav>
+    <script>
+      document.getElementById('aboutbutton').addEventListener('click', function () {
+        window.location.href = 'about.html';
+      });
+    </script>
+    <div class="profile_img" id="iconContainer">
+
+      <!-- <img src="user.png" id="pflogo" alt="Profile Logo"> -->
+      <img id="redirectIcon" src="user.png" alt="Icon">
+      <div id="loginoptions" class="login-options">
+        <span>Login/signup</span>
+        <img id="logoutIcon" src="logout.png" alt="Logout" style="display: none;">
+      </div>
+    </div>
+
+  </header>
+
+  <script>
+    document.getElementById('redirectIcon').addEventListener('click', function () {
+      window.location.href = 'loginpage.html';
+    })
+  </script>
+
+  <d id="main-con">
+    <main>
+      <div class="welcometo">Welcome to </div>
+      <span id="ayurmed">AyurMed</span>
+      <p id="welcome">AyurMed is your personalized guide to Ayurvedic medicine. Unlock the wisdom of ancient texts
+        effortlessly as our custom software suggests the ideal herbs and formulations based on your specific symptoms,
+        constitution, and preferences.</p>
+    </main>
+
+    <div id="Services" class="container">
+      <div class="box">
+        <div class="option">
+          <img id="img_card" src="assistant.png" alt="Ask Ayur Icon" id="icon">
+        </div>
+        <script>
+          document.getElementById('img_card').addEventListener('click', function () {
+            window.location.href = 'https://mediafiles.botpress.cloud/64bc9aa2-2668-4aee-8cbc-43c6dfcf5012/webchat/bot.html'; // Replace 'another-page.html' with the URL of the page you want to redirect to
+          });
+        </script>
+        <div class="title">Ask Ayur ?</div>
+      </div>
+
+      <div class="box">
+
+        <div class="option">
+          <img id="img_card1" src="mortar.png" alt="Remedies Icon">
+        </div>
+        <script>
+          document.getElementById('img_card1').addEventListener('click', function () {
+            window.location.href = 'ayurmed.html'; // Replace 'another-page.html' with the URL of the page you want to redirect to
+          });
+        </script>
+        <div class="title">Ayurvedic Remedies</div>
+      </div>
+
+      <div class="box">
+        <div class="option">
+          <img id="img_card2" src="doctor.jpg" alt="Doctor Icon" id="icon">
+        </div>
+        <script>
+          document.getElementById('img_card2').addEventListener('click', function () {
+            window.location.href = 'doctor.html'; // Replace 'another-page.html' with the URL of the page you want to redirect to
+          });
+        </script>
+        <div id="doctor_png">Doctor Consultation</div>
+      </div>
+
+      <div class="box">
+        <div class="option">
+          <img id="img_card3" src="order.png" alt="Order Icon" id="icon">
+        </div>
+        <script>
+          document.getElementById('img_card3').addEventListener('click', function () {
+            window.location.href = 'orderpage.html'; // Replace 'another-page.html' with the URL of the page you want to redirect to
+          });
+        </script>
+        <div class="title">Order Ausadhis</div>
+      </div>
+    </div>
+    </div>
+    <div>
+
+      <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+      <script src="https://mediafiles.botpress.cloud/64bc9aa2-2668-4aee-8cbc-43c6dfcf5012/webchat/config.js"
+         defer></script>
+
+      <footer>
+        <div class="footer_box">
+          <p id="footer_logo">AyurMed</p>
+        </div>
+        <div class="footer_box">
+          <h3>Services</h3>
+
+          <p>Consultancy</p>
+          <p>Chatbot</p>
+
+        </div>
+        <div class="footer_box">
+          <h3>Company</h3>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>About Ayurveda</p>
+
+        </div>
+        <div class="footer_box">
+          <h3>Contact</h3>
+          <p>Phone: +91 XXXXXXXXX</p>
+          <p>Email: info@ayurmed.com</p>
+        </div>
+
+      </footer>
+      <footer>
+        <p id="copyright">&copy; 2024 AyurMed. All rights reserved.</p>
+      </footer>
+    </div>
+
+</body>
+
+</html>
